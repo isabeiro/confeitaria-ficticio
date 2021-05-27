@@ -1,0 +1,289 @@
+
+:root {
+    --color-primary: #ff6c47;
+    --color-secondary: #FA8072;
+    --color-secondary-light: #f7bfb9;
+    --color-terciary: rgb(250,128,114,0.6);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+
+.home-background {
+    background-image: url(../images/pastries.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/****************
+   HOME-HEADER
+****************/
+
+.header {
+    position: static;
+    width: 1200px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header nav li {
+    list-style: none;
+    padding: 60px 20px 20px 20px;
+    background-color: var(--color-secondary-light);
+}
+
+.header nav li img {
+    width: 100px;
+}
+
+.header nav li a {
+    text-decoration: none;
+    color: black;
+    text-shadow: 0 0 8px white;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+
+.header nav li a:hover {
+    border-top: 3px solid var(--color-primary);
+}
+
+
+/****************
+   HOME-BANNER
+****************/
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    padding-top: 200px;
+}
+
+.banner h1 {
+    font-family: 'Pattaya', sans-serif;
+    font-size: 100px;
+    letter-spacing: 6px;
+    color: var(--color-primary);
+    text-shadow: 0 0 15px black;
+    padding-top: 20px;
+}
+
+.banner span {
+    font-size: 30px;
+    padding-top: 10px;
+    text-transform: uppercase;
+}
+
+
+/**********
+   ABOUT
+**********/
+
+.about {
+    height: 100vh;
+    background-image: url(../images/cupcakes-690040_1920.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.overlay {
+    position: relative;
+    top: -30px;
+    background-color: var(--color-terciary);
+    height: 110vh;
+}
+
+.about .overlay h2 {
+    font-size: 30px;
+    text-align: center;
+    padding: 80px;
+}
+
+.about .overlay span {
+    padding: 0 50px;
+    display: flex;
+}
+
+
+
+/************
+   PRODUCT
+************/
+
+.product {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--color-secondary-light);
+}
+
+.product h2 {
+    text-align: center;
+    font-size: 30px;
+    color: var(--color-primary);
+    text-shadow: 0 0 2px black;
+}
+
+.product .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.product .boxes {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    margin: auto 0;
+}
+
+.product .boxes span {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+.product .boxes img {
+    width: 250px;
+    border: 5px solid var(--color-secondary);
+    border-radius: 3px;
+}
+
+
+
+/****************
+   APPOINTMENT
+****************/
+
+.appointment {
+    height: 100vh;
+    background-image: url(../images/brooke-lark-V4MBq8kue3U-unsplash.jpg);
+    background-size: cover;
+}
+
+.appointment h2 {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 50px;
+}
+
+.appointment .personal-data {
+    display: flex;
+    justify-content: space-between;
+}
+
+.appointment .personal-data .input-wrapper {
+    width: 100%;
+    margin-right: 50px;
+    padding: 50px 0 100px 0;
+}
+
+.appointment .personal-data .input-wrapper:last-of-type {
+    margin-right: 0;
+}
+
+.appointment label {
+    display: block;
+    color: black;
+    font-weight: bolder;
+    text-shadow: 0 0 5px white;
+    letter-spacing: 1px;
+    padding-left: 5px;
+}
+
+.appointment .personal-data .input-wrapper input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid var(--color-secondary-light);
+}
+
+.appointment textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid var(--color-secondary-light);
+    height: 300px;
+}
+
+.appointment button {
+    height: 30px;
+    width: 60px;
+    padding: 5px 5px 5px 5px;
+    text-transform: uppercase;
+}
+
+
+/****************
+   LOCATION
+****************/
+
+.location {
+    height: 100vh;
+    background-color: var(--color-secondary-light);
+    
+}
+
+.location .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.location iframe {
+    height: 100vh;
+}
+
+.location .info-wrapper {
+    background-color: var(--color-terciary);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 108vh;
+    padding: 100px 50px;
+    position: relative;
+    top: -30px;
+}
+
+.location .info-wrapper .text {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.location .info-wrapper .text span {
+    display: block;
+}
+
+
+/************
+   FOOTER
+************/
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    font-size: 12px;
+}
